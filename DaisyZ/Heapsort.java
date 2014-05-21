@@ -2,7 +2,7 @@
 /* ************************
  Summary: fickle, and did not always work as it should
 feel like there should be more passes in the "remove" sect, but not sure
-
+and there are probably too many loops....
  ************************ */
 public class Heapsort {
 
