@@ -1,19 +1,25 @@
-
+import java.util.ArrayList;
 public class Heapsort {
 
+    public static Integer[] swap (Integer[] data, int p, int c) {
+	Integer prev = data[p];
+	data[p] = data[c];
+	data[c] = prev;
+    }
+
     public static Integer[] sort (Integer[] data) {
-	System.out.print("given: ");
-	print(data);
+	//System.out.print("given: ");
+	//print(data);
 	ALHeap heap = new ALHeap();
 	for (int i = 0; i < data.length; i++) {
 	    heap.add(data[i]);
 	}
-	System.out.println("converted to " + heap);
+	//System.out.println("converted to " + heap);
 	Integer[] sorted = new Integer[data.length];
 	for (int i = 0; i < data.length; i++)
 	    sorted[i] = heap.removeMin();
-	System.out.print("\nand sorted : ");
-	print(sorted);
+	//System.out.print("\nand sorted : ");
+	//print(sorted);
 	return sorted;
     }
 
